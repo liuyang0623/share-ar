@@ -1,0 +1,53 @@
+.index-page_wrap {
+  height: 100vh;
+  width: 100vw;
+  padding: 0 30px;
+  box-sizing: border-box;
+  @include flex(
+    (
+      i: center,
+      c: center,
+      d: column,
+    )
+  );
+  .demo-info {
+    margin-bottom: 40px;
+    .page-title {
+      font-size: 38px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .page-desc {
+      font-size: 14px;
+      color: rgba($color: #000000, $alpha: 0.8);
+    }
+  }
+  .page-option_wrap {
+    @include flex();
+    .page-item {
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+      }
+      margin-right: 20px;
+      flex: 1;
+      background-color: #eee;
+      padding: 15px;
+      border-radius: 12px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .item-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 20px;
+      }
+      .item-desc {
+        font-size: 14px;
+        color: rgba($color: #000000, $alpha: 0.8);
+      }
+    }
+  }
+}
